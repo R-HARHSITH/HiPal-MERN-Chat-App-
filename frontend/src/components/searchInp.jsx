@@ -148,6 +148,7 @@
 // };
 
 // export default SearchInput;
+// 3
 import React, { useState, useEffect, useRef } from 'react';
 import { FaSearch } from "react-icons/fa";
 import { useChatStore } from '../store/useChatStore.js';
