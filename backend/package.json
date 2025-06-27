@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "server": "NODE_ENV=development  src/server.js",
+    "server": "NODE_ENV=development nodemon src/server.js",
     "start": "NODE_ENV=production node src/server.js"
   },
   "keywords": [],
