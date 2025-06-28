@@ -8,7 +8,10 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173", "*"],
+    origin: [
+      "http://localhost:5173",
+      "https://hipal-mern-chat-app.onrender.com",
+    ],
   },
 });
 
@@ -19,6 +22,7 @@ export function getReceiverSocketId(userId) {
 const userSocketMap = {};
 
 io.on("connection", (socket) => {
+  console.log(socket.id);
   console.log("A user connected ", socket.id);
   const userId = socket.handshake.query.userId;
   if (userId) userSocketMap[userId] = socket.id;
