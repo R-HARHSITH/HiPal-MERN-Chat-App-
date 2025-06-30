@@ -12,6 +12,10 @@ const MessageInput = () => {
 
   const handleImageChange=(e)=>{
     const file=e.target.files[0];
+    if (!file) {
+  toast.error("No file selected");
+  return;
+}
     if(!file.type.startsWith("image/")){
       toast.error("Please select an image file");
       return ;
@@ -84,7 +88,7 @@ const MessageInput = () => {
           />
           <button
           type='button'
-          className={`hidden sm:flex btn btn-circle
+          className={`sm:flex btn btn-circle
             ${imagePreview?"text-emerald-500":"text-zinc-400"}
             `}
             onClick={()=>{fileInputRef.current?.click()}}
