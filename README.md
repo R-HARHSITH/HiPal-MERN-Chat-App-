@@ -26,13 +26,13 @@ Chat App V2 supports user authentication, avatar uploads, friend requests, and S
 - 🔐 JWT-based authentication
 - 💬 Realtime messaging with Socket.IO
 - 👤 User profiles with avatar uploads (Cloudinary)
-- 🤝 Friend requests and contact list
+- 🤝 Online presence detection and contact list
 - 🗄️ Persistent message storage (MongoDB)
 
 ## 🛠️ Tech Stack
 - Backend: Node.js, Express, MongoDB, Mongoose, Socket.IO
 - Frontend: React, Vite, Tailwind CSS
-- Storage & services: Cloudinary (images), SMTP provider (email)
+- Storage & services: Cloudinary (images)
 
 ## ⚡ Quickstart
 1) Install dependencies
